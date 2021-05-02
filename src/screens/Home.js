@@ -1251,7 +1251,26 @@ class Home extends React.Component {
                 nostrum reiciendis numquam.
               </div>
               <div className="clients__panel__content">
-                <div className="clients__panel__content__card"></div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
+                <div className="clients__panel__content__card">Microsoft</div>
               </div>
             </div>
           </Container>

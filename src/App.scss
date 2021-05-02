@@ -383,6 +383,33 @@ p {
 .clients__panel {
   background-color: $primary;
   width: 100%;
+  padding: 3em;
+  border-radius: 20px;
+}
+.clients__panel__heading {
+  font-size: $heading-font-size + 5;
+  font-weight: 600;
+  color: $font-color;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.clients__panel__info {
+  font-size: $normal-font-size;
+  color: $font-color;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.clients__panel__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.clients__panel__content__card {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 700px) {
   .nav__bar {
@@ -440,6 +467,9 @@ p {
   }
   .get__in__touch__panel__content {
     padding: 0em 2em;
+  }
+  .clients__panel__content {
+    justify-content: center;
   }
 }
 
