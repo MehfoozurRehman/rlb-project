@@ -2,8 +2,8 @@
 
 $primary: #f3f3f3;
 $font-color: #374957;
-$dark: #15878c;
-$highlite: #ffb229;
+$dark: #019ad3;
+$highlite: #ee7a27;
 $blips: $font-color;
 $light-green: #f3f9f9;
 $nav-pills-link-active-bg: $dark !important;
@@ -24,4 +24,423 @@ p {
   color: $primary;
   font-size: $normal-font-size;
 }
+.nav__bar {
+  background-color: transparent !important;
+  padding: 1em 5em !important;
+  padding-left: 10em !important;
+}
+.nav__bar__solid {
+  background-color: transparent !important;
+  padding: 1em 5em !important;
+}
+.active {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.active__reverse {
+  background-color: $primary !important;
+}
+.nav__link {
+  color: $primary !important;
+  font-weight: 400;
+  font-size: $normal-font-size !important;
+  margin: 0em 1em;
+}
+.nav__link:hover {
+  transition: 50ms;
+  color: $dark !important;
+}
+.active__reverse .nav__link {
+  color: $font-color !important;
+}
+.active__reverse .nav__link:hover {
+  color: $dark !important;
+}
+.nav__btn {
+  padding: 0em !important;
+  margin: 0em 1em;
+}
+.nav__btn .nav__link {
+  color: $primary !important;
+}
+.nav__btn:hover .nav__link {
+  color: $primary !important;
+}
+.footer {
+  width: 100vw;
+  background-color: $primary;
+  padding: 3rem 0rem;
+}
+.footer .nav__link {
+  padding: 0.1em 0.5em !important;
+  color: $font-color !important;
+}
+.footer .nav__link:hover {
+  color: $dark !important;
+}
+.jumbotron__box {
+  padding: 0em !important;
+  margin: 0em !important;
+  height: fit-content !important;
+  position: relative;
+  margin-left: 5em !important;
+  border-bottom-left-radius: 20px !important;
+}
+.jumbotron__img {
+  width: 100%;
+  height: fit-content !important;
+  min-height: 80vh !important;
+  max-height: 80vh !important;
+  border-bottom-left-radius: 20px !important;
+}
+.jumbotron__container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 5em !important;
+  border-bottom-left-radius: 20px !important;
+}
+.jumbotron__heading {
+  font-size: $xl-heading + 5;
+  color: $primary;
+  margin-bottom: 2em;
+  display: flex !important;
+  flex-direction: column !important;
+  letter-spacing: 3px;
+}
+.jumbotron__heading span {
+  font-weight: 600;
+}
+.jumbotron__info {
+  font-size: $normal-font-size;
+  text-align: center;
+  color: $primary;
+  max-width: 80%;
+}
+.form__row {
+  margin-bottom: 2em !important;
+}
+.form__col {
+  padding: 0em !important;
+}
+.button__override {
+  width: 180px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: $primary !important;
+  font-size: $normal-font-size;
+  white-space: nowrap !important;
+  font-weight: 600 !important;
+  padding: 0.7em 1em !important;
+  border: 3px solid $primary !important;
+}
+.button__override__reverse {
+  width: 180px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: $primary !important;
+  background-color: $highlite !important;
+  font-size: $normal-font-size !important;
+  white-space: nowrap !important;
+  font-weight: 600 !important;
+  padding: 0.7em 1em !important;
+  border: none !important;
+  border-radius: 10px;
+}
+.button__override__reverse:hover {
+  background-color: darken($highlite, 10%) !important;
+}
+.button__svg {
+  margin-left: 1em;
+  width: 1em;
+  height: 1em;
+}
+.input__box {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid $blips;
+  padding: 0.7em 1em;
+  max-width: 50%;
+}
+.input__icon {
+  background-color: white !important;
+  border: none !important;
+}
+.input__field {
+  background-color: white !important;
+  border: none !important;
+}
+.homepageCompanyJumbotronBg {
+  width: 500px;
+  position: absolute;
+  bottom: -70px;
+  right: 20px;
+}
+.field__card {
+  width: 23%;
+  margin-bottom: 3em;
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.field__card:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+.field__card__row {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.field__card__heading {
+  font-size: 22px;
+  width: 100% !important;
+  font-weight: bold;
+  padding: 0em !important;
+  margin-bottom: 1em;
+}
+.field__card__text__overlay {
+  display: flex;
+  align-items: flex-end;
+  padding: 0em !important;
+  justify-content: center;
+}
+.field__card__text {
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
+  padding: 1em 0em;
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: $normal-font-size;
+  font-weight: 600;
+}
+.side__panel__left {
+  width: 50%;
+  background-color: $font-color;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  height: 200px;
+}
+.side__panel__left__img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.side__panel__left__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 10% !important;
+  position: absolute;
+  top: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.side__panel__left__heading {
+  font-size: $heading-font-size + 4;
+  color: $primary;
+  font-weight: 600;
+  width: 300px;
+}
+.side__panel__left__info {
+  font-size: $normal-font-size;
+  color: $primary;
+  margin-bottom: 1em;
+  width: 300px;
+}
+.side__panel__left__btn {
+  width: 300px;
+}
+.side__panel__right {
+  width: 50%;
+  background-color: #019ad3;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: relative;
+  height: 200px;
+}
+.side__panel__left__img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.side__panel__right__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10% !important;
+  position: absolute;
+  top: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.middle__panel {
+  padding: 8em 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.middle__panel__heading {
+  font-size: 22px;
+  width: 100% !important;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.middle__panel__content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.middle__panel__content__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.middle__panel__content__card__img {
+  width: 80px;
+  height: 80px;
+}
+.middle__panel__content__card__heading {
+  margin-top: 0.5em;
+  font-size: $normal-font-size;
+  color: $font-color;
+}
+.email__list__form {
+  width: 100%;
+  background-color: rgba(238, 122, 39, 0.9) !important;
+  display: flex;
+  flex-direction: column;
+  padding: 6em 5em;
+  border-radius: 20px;
+}
+.email__list__form__container {
+  width: 70%;
+  height: fit-content;
+  background: url("./assets/Mask\ Group\ 14.png"), no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+.email__list__form__content {
+  display: flex;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.email__list__form__heading {
+  font-size: $heading-font-size + 5;
+  font-weight: 600;
+  color: $primary;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.email__list__form__content .input__field {
+  height: 50px;
+}
+.get__in__touch__panel {
+  width: 100vw;
+  background-color: $dark;
+  height: 500px;
+  position: relative;
+}
+.get__in__touch__panel__bg {
+  width: 100%;
+  height: 100%;
+}
+.get__in__touch__panel__content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 22em;
+}
+.get__in__touch__panel__heading {
+  font-size: $heading-font-size + 6;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 1em;
+}
+.get__in__touch__panel__info {
+  font-size: $normal-font-size;
+  color: $primary;
+  margin-bottom: 1em;
+}
+.clients__panel {
+  background-color: $primary;
+  width: 100%;
+}
+@media (max-width: 700px) {
+  .nav__bar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    margin: 0 !important;
+    padding: 0.5em 1em !important;
+  }
+  .jumbotron__box {
+    margin: 0 !important;
+  }
+  .input__box {
+    max-width: 100% !important;
+  }
+  .homepageCompanyJumbotronBg {
+    display: none;
+  }
+  .field__card {
+    width: 80%;
+  }
+  .field__card__row {
+    justify-content: center !important;
+  }
+  .field__card__heading {
+    padding: 0em 2em !important;
+  }
+  .side__panel__left {
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  .side__panel__right {
+    width: 100%;
+    border-radius: 0px !important;
+  }
+  .middle__panel__content__card {
+    width: 50%;
+    margin-bottom: 2em;
+  }
+  .email__list__form__container {
+    width: 100%;
+  }
+  .email__list__form__content {
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+  }
+  .email__list__form {
+    padding: 6em 2em;
+  }
+  .email__list__form__content .input__field {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+  }
+  .svg__container svg {
+    display: none;
+  }
+  .get__in__touch__panel__content {
+    padding: 0em 2em;
+  }
+}
+
 @import "~bootstrap/scss/bootstrap";
