@@ -1,0 +1,351 @@
+@import "../App.scss";
+
+.jumbotron__vacancies {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.jumbotron__vacancies-background-img {
+  width: 100%;
+  height: 100%;
+}
+.jumbotron__vacancies-content {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(238, 122, 39, 0.9) !important;
+}
+.jumbotron__vacancies-content-heading {
+  font-size: 30px;
+  color: $primary;
+}
+.jumbotron__vacancies-content-form {
+  display: flex;
+  background-color: white;
+  padding-left: 0.5em;
+  border-radius: 10px;
+  margin-top: 3em;
+  align-items: center;
+  width: 80%;
+}
+.jumbotron__vacancies-content-input {
+  flex: 1;
+  height: 50px;
+  background-color: white;
+  border: none;
+  padding: 0em 1.5em;
+  font-size: 14px;
+  outline: none;
+}
+.jumbotron__vacancies-content-divider {
+  width: 1px;
+  height: 40px;
+  background-color: #242424;
+}
+.jumbotron__vacancies-content-select {
+  flex: 1;
+  height: 50px;
+  background-color: white;
+  border: none;
+  padding: 0em 0.5em;
+  outline: none;
+  max-width: 80px;
+  color: #242424;
+  font-size: 14px;
+}
+.jumbotron__vacancies-content-btn {
+  background-color: $dark;
+  color: white;
+  height: 50px;
+  width: 60px;
+  border: none;
+  border-radius: 10px;
+  margin-left: 1em;
+}
+.jumbotron__vacancies-content-btn:hover {
+  background-color: darken($dark, 10%);
+}
+.search__result__container__vacancies {
+  display: flex;
+  margin: 8em auto;
+  width: 80%;
+}
+.search__result__container__vacancies-filter-panel {
+  width: 25%;
+  padding: 2em;
+  background-color: #faf3ef;
+  border-radius: 10px;
+  height: fit-content;
+}
+.search__result__container__vacancies-filter-panel-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.search__result__container__vacancies-filter-panel-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #242424;
+}
+.search__result__container__vacancies-filter-panel-heading-row-btn {
+  background-color: #f9e9e0;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1em;
+  font-size: 14px;
+}
+.search__result__container__vacancies-filter-panel-heading-row-btn:hover {
+  background-color: darken(#f9e9e0, 10%);
+}
+.search__result__container__vacancies-filter-panel-input-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #ee7a27;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-top: 1em;
+}
+.search__result__container__vacancies-filter-panel-input-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ee7a27;
+  cursor: pointer;
+}
+.search__result__container__vacancies-filter-panel-input-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ee7a27;
+  cursor: pointer;
+}
+.search__result__container__vacancies-filter-panel-sub-heading {
+  font-size: 16px;
+  color: #242424;
+  margin-top: 2em;
+  margin-left: 0.3em;
+}
+.search__result__container__vacancies-filter-panel-input {
+  background-color: #f9e9e0;
+  border-radius: 8px;
+  border: none;
+  color: #242424;
+  font-size: 14px;
+  width: 100%;
+  padding: 0.7em 1em;
+  outline-color: #ee7a27;
+}
+.search__result__container__vacancies-filter-panel-info {
+  font-size: 16px;
+  color: #ee7a27;
+}
+.search__result__container__vacancies-filter-panel-catagory-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #777777;
+    font-size: 12px;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1em;
+  }
+
+  // Box.
+  & + label:after {
+    content: "";
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #e1e1e1;
+    border-radius: 5px;
+  }
+
+  // Box hover
+  &:hover + label:after {
+    background: #ee7a27;
+  }
+
+  // Box focus
+  &:focus + label:after {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:after {
+    background: #ee7a27;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:after {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}
+.search__result__container__vacancies-filter-panel-catagory-heading {
+  font-size: 15px !important;
+  color: #777777;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-decoration: none !important;
+  padding: 0em !important;
+}
+.search__result__container__vacancies-filter-panel-catagory-heading:hover {
+  color: #ee7a27;
+}
+.search__result__container__vacancies-results-panel {
+  flex: 1;
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.search__result__container__vacancies-results-panel-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.search__result__container__vacancies-results-panel-heading {
+  font-size: 20px;
+  color: #313131;
+  font-weight: 600;
+}
+.search__result__container__vacancies-results-panel-heading-select-box {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.search__result__container__vacancies-results-panel-heading-select-box-heading {
+  font-size: 16px;
+  color: #313131;
+  margin-right: 1em;
+}
+.search__result__container__vacancies-results-panel-heading-select-box-input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 0em 1em;
+}
+.search__result__container__vacancies-results-panel-card {
+  padding: 2em;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 2em;
+}
+.search__result__container__vacancies-results-panel-card:hover {
+  background-color: $dark;
+}
+.search__result__container__vacancies-results-panel-card-heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #313131;
+  margin-bottom: 2em;
+  flex: 1;
+}
+.search__result__container__vacancies-results-panel-card:hover
+  .search__result__container__vacancies-results-panel-card-heading {
+  color: white;
+}
+.search__result__container__vacancies-results-panel-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search__result__container__vacancies-results-panel-card-content-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.search__result__container__vacancies-results-panel-card-info-row {
+  display: flex;
+  margin-right: 2em;
+  align-items: center;
+  color: #adb5bd;
+}
+.search__result__container__vacancies-results-panel-card-info-row svg {
+  margin-right: 0.5em;
+}
+.search__result__container__vacancies-results-panel-card:hover
+  .search__result__container__vacancies-results-panel-card-info-row
+  svg {
+  color: #ee7a27;
+}
+.search__result__container__vacancies-results-panel-card-info {
+  font-size: 14px;
+}
+.search__result__container__vacancies-results-panel-card:hover
+  .search__result__container__vacancies-results-panel-card-info {
+  color: white;
+}
+.search__result__container__vacancies-results-panel-card-content-right-secondary-btn {
+  font-size: 14px;
+  padding: 0.7em 1.5em;
+  border: 1px solid #313131;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #313131;
+  margin-right: 1em;
+}
+.search__result__container__vacancies-results-panel-card:hover
+  .search__result__container__vacancies-results-panel-card-content-right-secondary-btn {
+  border: 1px solid white;
+  color: white;
+}
+.search__result__container__vacancies-results-panel-card-content-right-primary-btn {
+  font-size: 14px;
+  padding: 0.7em 1.5em;
+  border: 1px solid $dark;
+  border-radius: 8px;
+  background-color: $dark;
+  color: white;
+  margin-right: 1em;
+}
+.search__result__container__vacancies-results-panel-card:hover
+  .search__result__container__vacancies-results-panel-card-content-right-primary-btn {
+  border: 1px solid #ee7a27;
+  background-color: #ee7a27;
+}
