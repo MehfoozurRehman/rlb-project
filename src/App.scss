@@ -496,5 +496,20 @@ p {
     justify-content: center;
   }
 }
+@media (min-width: 1700px) {
+  .homepageCompanyJumbotronBg {
+    width: 600px;
+  }
+}
+@media (min-width: 1920px) {
+  .homepageCompanyJumbotronBg {
+    width: 700px;
+  }
+}
+@media (min-width: 2020px) {
+  .homepageCompanyJumbotronBg {
+    width: 800px;
+  }
+}
 
 @import "~bootstrap/scss/bootstrap";
