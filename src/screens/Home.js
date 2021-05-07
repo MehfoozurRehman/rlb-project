@@ -194,8 +194,6 @@ class Home extends React.Component {
               <FieldCard />
               <FieldCard />
               <FieldCard />
-              <FieldCard />
-              <FieldCard />
             </Row>
             <Row>
               <Button variant="primary" style={{ height: "40px" }}>
@@ -1150,7 +1148,7 @@ class Home extends React.Component {
                 <div className="email__list__form__content">
                   <FormControl
                     type="text"
-                    placeholder="Email Address"
+                    placeholder="Enter your email address here"
                     variant="dark"
                     className="input__field"
                   />

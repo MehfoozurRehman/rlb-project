@@ -1,16 +1,26 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import fieldCardBg from "../assets/fieldCardBg.png";
+import "./FieldCard.scss";
 
 export default function FieldCard() {
   return (
-    <Card className="field__card">
-      <Card.Img src={fieldCardBg} alt="Card image" />
-      <Card.ImgOverlay className="field__card__text__overlay">
-        <Card.Text className="field__card__text">
-          Manager Field Service
-        </Card.Text>
-      </Card.ImgOverlay>
-    </Card>
+    <div class="example-2 card">
+      <div class="wrapper">
+        <div class="data">
+          <div class="content">
+            <h1 class="title">Manage field service</h1>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem.
+            </p>
+            <a href="#" class="button">
+              Read more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

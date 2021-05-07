@@ -199,6 +199,7 @@ p {
 .input__field {
   background-color: white !important;
   border: none !important;
+  padding: 0em 1em !important;
 }
 .homepageCompanyJumbotronBg {
   width: 500px;
@@ -244,7 +245,7 @@ p {
 }
 .side__panel__left {
   width: 50%;
-  background-color: $font-color;
+  background-color: #019ad3;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
@@ -286,7 +287,7 @@ p {
 }
 .side__panel__right {
   width: 50%;
-  background-color: #019ad3;
+  background-color: $font-color;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   position: relative;
