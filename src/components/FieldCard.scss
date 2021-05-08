@@ -23,6 +23,7 @@ $open-sans: "Open Sans", sans-serif;
   float: left;
   width: 350px;
   border-radius: 20px !important;
+  margin-bottom: 3em;
   .menu-content {
     @include cf;
     margin: 0;
@@ -47,7 +48,6 @@ $open-sans: "Open Sans", sans-serif;
   .wrapper {
     background-color: $white;
     min-height: 350px;
-    margin-bottom: 3em;
     position: relative;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
@@ -61,11 +61,11 @@ $open-sans: "Open Sans", sans-serif;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
-    transform: translateY(calc(180px + 1em));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    transform: translateY(calc(190px + 1em));
     transition: transform 0.3s;
     .content {
-      padding: 2em;
+      padding: 1em 2em;
       position: relative;
       z-index: 1;
     }
@@ -77,6 +77,8 @@ $open-sans: "Open Sans", sans-serif;
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
+    color: #ee7a27;
+    font-weight: 600;
   }
   .text {
     height: 180px;
@@ -127,7 +129,7 @@ $open-sans: "Open Sans", sans-serif;
   }
   .data {
     color: $white;
-    transform: translateY(calc(205px + 4em));
+    transform: translateY(calc(190px + 4em));
   }
   .title {
     a {
