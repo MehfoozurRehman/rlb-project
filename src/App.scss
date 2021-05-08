@@ -15,6 +15,7 @@ $xl-heading: $heading-font-size + 10px;
 *::after,
 *::before {
   font-family: "Poppins", sans-serif !important;
+  scroll-behavior: smooth !important;
 }
 html {
   scroll-behavior: smooth !important;
@@ -23,6 +24,9 @@ html {
 p {
   color: $primary;
   font-size: $normal-font-size;
+}
+body {
+  overflow-x: hidden;
 }
 .nav__bar {
   background-color: transparent !important;
@@ -49,6 +53,31 @@ p {
   transition: 50ms;
   color: $dark !important;
 }
+.footer__heading {
+  font-size: $heading-font-size;
+  color: $highlite;
+  font-weight: 600;
+  margin: 0em 1em;
+}
+.footer__heading:hover {
+  color: $highlite;
+}
+.nav__link__footer {
+  color: $font-color !important;
+  font-weight: 400;
+  font-size: $normal-font-size !important;
+  margin: 0em 1em;
+}
+.nav__link__footer svg {
+  color: $highlite;
+  width: 18px;
+  height: 18px;
+  margin-right: 1em;
+}
+.nav__link__footer:hover {
+  transition: 50ms;
+  color: $highlite !important;
+}
 .active__reverse .nav__link {
   color: $font-color !important;
 }
@@ -69,6 +98,11 @@ p {
   width: 100vw;
   background-color: $primary;
   padding: 3rem 0rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 .footer .nav__link {
   padding: 0.1em 0.5em !important;
@@ -435,6 +469,20 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.back__to__top {
+  width: 300px !important;
+  height: 300px !important;
+  background-color: $highlite;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  color: $highlite !important;
+  position: absolute;
+  bottom: -300px;
 }
 @media (max-width: 700px) {
   .nav__bar {
