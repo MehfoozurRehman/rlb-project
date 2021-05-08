@@ -14,6 +14,7 @@ import {
   Card,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Select from "react-select";
 import "./Vacancies.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -128,6 +129,11 @@ function ResultsCard({ name, bank, location, price }) {
 class Vacancies extends React.Component {
   render() {
     const resultNo = 22;
+    const options = [
+      { value: "chocolate", label: "Chocolate" },
+      { value: "strawberry", label: "Strawberry" },
+      { value: "vanilla", label: "Vanilla" },
+    ];
     return (
       <>
         <Header />
@@ -421,12 +427,16 @@ class Vacancies extends React.Component {
                 <div className="search__result__container__vacancies-results-panel-heading-select-box-heading">
                   Sort By:
                 </div>
-                <select className="search__result__container__vacancies-results-panel-heading-select-box-input">
-                  <option value="">Standard</option>
-                  <option value="">Standard</option>
-                  <option value="">Standard</option>
-                  <option value="">Standard</option>
-                </select>
+                <div style={{ width: "200px" }}>
+                  <Select
+                    // defaultValue={}
+                    name="colors"
+                    options={options}
+                    className="basic-multi-select"
+                    classNamePrefix="select"
+                    style={{ width: "200px" }}
+                  />
+                </div>
               </div>
             </div>
             <div className="search__result__container__vacancies-results-panel-card-container">

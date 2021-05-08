@@ -971,12 +971,12 @@ class Home extends React.Component {
               xmlns="http://www.w3.org/2000/svg"
               style={{
                 position: "absolute",
-                left: "-300px",
-                top: "-50px",
+                left: "-350px",
+                top: "-100px",
                 zIndex: "2",
               }}
               viewBox="0 0 767.81 767.811"
-              width="600px"
+              width="700px"
             >
               <g
                 id="Rectangle_768"
@@ -984,7 +984,7 @@ class Home extends React.Component {
                 transform="translate(767.81 383.905) rotate(135)"
                 fill="none"
                 stroke="#ee7a27"
-                stroke-width="120"
+                stroke-width="50"
               >
                 <rect width="542.924" height="542.924" rx="40" stroke="none" />
                 <rect
