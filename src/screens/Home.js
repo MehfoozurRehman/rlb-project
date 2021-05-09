@@ -188,12 +188,60 @@ class Home extends React.Component {
             </svg>
             <Row className="field__card__heading">Choose Your Field</Row>
             <Row className="field__card__row">
-              <FieldCard />
-              <FieldCard />
-              <FieldCard />
-              <FieldCard />
-              <FieldCard />
-              <FieldCard />
+              <FieldCard
+                title="Engineering"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
+              <FieldCard
+                title="Development"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
+              <FieldCard
+                title="Sales"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
+              <FieldCard
+                title="Manufacturing Supply Chain"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
+              <FieldCard
+                title="Finance"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
+              <FieldCard
+                title="IT"
+                info="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+              repudiandae necessitatibus voluptatibus doloribus voluptatem
+              expedita iste esse dignissimos voluptas eveniet asperiores cumque
+              sit porro vero a sint, eaque quibusdam itaque nobis ratione
+              praesentium impedit iusto! Eligendi tempore quos rem."
+                link="#"
+              />
             </Row>
             <Row>
               <Button variant="primary" style={{ height: "40px" }}>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import logo from "../assets/logo.svg";
 
 export default function Header() {
@@ -356,9 +356,24 @@ export default function Header() {
             <Nav.Link as={Link} to="/professionals" className="nav__link">
               Professionals
             </Nav.Link>
-            <Nav.Link as={Link} to="/clients" className="nav__link">
-              Clients
-            </Nav.Link>
+            <Nav.Link></Nav.Link>
+            <NavDropdown
+              title="Clients"
+              id="basic-nav-dropdown"
+              className="nav__link__a"
+            >
+              <NavDropdown.Item as={Link} to="/clients">
+                Recruitment
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/clients">
+                Secondment
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/clients">
+                RPO (Recruitment Process Outsourcing)
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/about-us" className="nav__link">
               About Us
             </Nav.Link>

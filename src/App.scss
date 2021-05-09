@@ -53,6 +53,16 @@ body {
   transition: 50ms;
   color: $dark !important;
 }
+.nav__link__a .dropdown-toggle {
+  color: $primary !important;
+  font-weight: 400;
+  font-size: $normal-font-size !important;
+  margin: 0em 1em;
+}
+.nav__link__a .dropdown-toggle:hover {
+  transition: 50ms;
+  color: $dark !important;
+}
 .footer__heading {
   font-size: $heading-font-size;
   color: $highlite;
