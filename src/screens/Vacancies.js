@@ -21,6 +21,26 @@ import Footer from "../components/Footer";
 import get__in__touch__panel__bg from "../assets/get__in__touch__panel__bg.png";
 import jumbotron__vacancies__background__img from "../assets/jumbotron__vacancies__background__img.png";
 
+function RangeInput() {
+  const [value, onChange] = React.useState(1);
+  return (
+    <div className="search__result__container__vacancies-filter-panel-input-range">
+      <input
+        type="range"
+        className="search__result__container__vacancies-filter-panel-input-range-input"
+        min="1"
+        max="30"
+        value={value}
+        onChange={({ target: { value: radius } }) => {
+          onChange(radius);
+        }}
+      />
+      <div className="search__result__container__vacancies-filter-panel-input-range-buble">
+        {value} km
+      </div>
+    </div>
+  );
+}
 function ResultsCard({ name, bank, location, price }) {
   return (
     <div className="search__result__container__vacancies-results-panel-card">
@@ -127,6 +147,12 @@ function ResultsCard({ name, bank, location, price }) {
 }
 
 class Vacancies extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rangeValue: 0,
+    };
+  }
   render() {
     const resultNo = 22;
     const options = [
@@ -134,6 +160,7 @@ class Vacancies extends React.Component {
       { value: "strawberry", label: "Strawberry" },
       { value: "vanilla", label: "Vanilla" },
     ];
+
     return (
       <>
         <Header />
@@ -226,12 +253,7 @@ class Vacancies extends React.Component {
               />
             </div>
             <div className="search__result__container__vacancies-filter-panel-row">
-              <input
-                type="range"
-                className="search__result__container__vacancies-filter-panel-input-range"
-                min="1"
-                max="30"
-              />
+              <RangeInput />
             </div>
             <div className="search__result__container__vacancies-filter-panel-row">
               <div className="search__result__container__vacancies-filter-panel-info">
@@ -256,27 +278,21 @@ class Vacancies extends React.Component {
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-1">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-1">Engineering</label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
                       id="styled-checkbox-2"
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-2">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-2">Development</label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
                       id="styled-checkbox-3"
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-3">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-3">Sales</label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
                       id="styled-checkbox-4"
@@ -284,7 +300,7 @@ class Vacancies extends React.Component {
                       value="value1"
                     />
                     <label htmlFor="styled-checkbox-4">
-                      (Field) Service Engineers
+                      Manufacturing Supply Chain
                     </label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
@@ -292,9 +308,14 @@ class Vacancies extends React.Component {
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-5">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-5">Finance</label>
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-16"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-16">IT</label>
                   </div>
                 </Accordion.Collapse>
               </Accordion>
@@ -374,45 +395,21 @@ class Vacancies extends React.Component {
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-11">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-11">MBO</label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
                       id="styled-checkbox-12"
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-12">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-12">HBO</label>
                     <input
                       className="search__result__container__vacancies-filter-panel-catagory-checkbox"
                       id="styled-checkbox-13"
                       type="checkbox"
                       value="value1"
                     />
-                    <label htmlFor="styled-checkbox-13">
-                      (Field) Service Engineers
-                    </label>
-                    <input
-                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
-                      id="styled-checkbox-14"
-                      type="checkbox"
-                      value="value1"
-                    />
-                    <label htmlFor="styled-checkbox-14">
-                      (Field) Service Engineers
-                    </label>
-                    <input
-                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
-                      id="styled-checkbox-15"
-                      type="checkbox"
-                      value="value1"
-                    />
-                    <label htmlFor="styled-checkbox-15">
-                      (Field) Service Engineers
-                    </label>
+                    <label htmlFor="styled-checkbox-13">WO</label>
                   </div>
                 </Accordion.Collapse>
               </Accordion>
