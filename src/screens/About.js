@@ -117,27 +117,27 @@ class About extends React.Component {
             xmlns="http://www.w3.org/2000/svg"
             style={{
               position: "absolute",
-              left: "-350px",
-              top: "-100px",
+              left: "-320px",
+              top: "-140px",
               zIndex: "2",
             }}
             viewBox="0 0 767.81 767.811"
-            width="700px"
+            width="600px"
           >
             <g
               id="Rectangle_768"
               data-name="Rectangle 768"
               transform="translate(767.81 383.905) rotate(135)"
               fill="none"
-              stroke="#019AD3"
+              stroke="#019ad3"
               stroke-width="50"
             >
-              <rect width="542.924" height="542.924" rx="40" stroke="none" />
+              <rect width="242.924" height="222.924" rx="40" stroke="none" />
               <rect
                 x="60"
                 y="60"
-                width="422.924"
-                height="422.924"
+                width="322.924"
+                height="322.924"
                 rx="20"
                 fill="#ffffff"
               />

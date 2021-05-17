@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: rgba(238, 122, 39, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 .jumbotron__vacancies-content-heading {
   font-size: 30px;
@@ -243,14 +243,14 @@
 }
 .search__result__container__vacancies-filter-panel-catagory-heading {
   font-size: 15px !important;
-  color: #777777;
+  color: $font-color !important;
   font-weight: 600;
   margin-bottom: 0.5em;
   text-decoration: none !important;
   padding: 0em !important;
 }
 .search__result__container__vacancies-filter-panel-catagory-heading:hover {
-  color: #ee7a27;
+  color: #ee7a27 !important;
 }
 .search__result__container__vacancies-results-panel {
   flex: 1;
@@ -298,7 +298,7 @@
   margin-bottom: 2em;
 }
 .search__result__container__vacancies-results-panel-card:hover {
-  background-color: $dark;
+  background-color: $highlite;
 }
 .search__result__container__vacancies-results-panel-card-heading {
   font-size: 20px;
@@ -333,7 +333,7 @@
 .search__result__container__vacancies-results-panel-card:hover
   .search__result__container__vacancies-results-panel-card-info-row
   svg {
-  color: #ee7a27;
+  color: $dark;
 }
 .search__result__container__vacancies-results-panel-card-info {
   font-size: 14px;
@@ -368,5 +368,5 @@
 .search__result__container__vacancies-results-panel-card:hover
   .search__result__container__vacancies-results-panel-card-content-right-primary-btn {
   border: 1px solid #ee7a27;
-  background-color: #ee7a27;
+  background-color: $dark;
 }
