@@ -143,7 +143,7 @@ class About extends React.Component {
               />
             </g>
           </svg>
-          <div className="get__in__touch__panel__about">
+          <div className="get__in__touch__panel">
             <img
               src={get__in__touch__panel__bg}
               alt="get__in__touch__panel__bg"

@@ -2,7 +2,7 @@
 
 .jumbotron__about {
   width: 100%;
-  height: 500px;
+  height: 450px;
   position: relative;
 }
 .jumbotron__about-background-img {
@@ -28,10 +28,9 @@
 .jumbotron__about-content-info {
   font-size: 14px;
   color: $primary;
-  max-height: 200px;
   overflow: hidden;
-  width: 80%;
-  text-align: center;
+  width: 65%;
+  text-align: justify;
 }
 .get__in__touch__panel__about {
   width: 100vw;
