@@ -55,7 +55,7 @@ body {
   transform: scale(1.2);
   color: #ffffff !important;
 }
-.nav__link:focus,
+.nav__link:focus-within,
 .nav__link:active {
   transition: 100ms;
   transform: scale(1.2);
@@ -71,6 +71,19 @@ body {
   transition: 100ms;
   transform: scale(1.2);
   color: #ffffff !important;
+}
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.dropdown-menu a {
+  color: $primary !important;
+  font-weight: 400;
+  font-size: $normal-font-size !important;
+}
+.dropdown-menu a:hover {
+  transition: 100ms;
+  color: #ffffff !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 .footer__heading {
   font-size: $heading-font-size;

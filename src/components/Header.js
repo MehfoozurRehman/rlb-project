@@ -365,11 +365,9 @@ export default function Header() {
               <NavDropdown.Item as={Link} to="/clients">
                 Recruitment
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/clients">
                 Secondment
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/clients">
                 RPO (Recruitment Process Outsourcing)
               </NavDropdown.Item>
