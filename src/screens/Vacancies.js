@@ -160,6 +160,10 @@ class Vacancies extends React.Component {
       { value: "strawberry", label: "Strawberry" },
       { value: "vanilla", label: "Vanilla" },
     ];
+    const optionsRange = [
+      { value: "chocolate", label: "10 km" },
+      { value: "strawberry", label: "5 km" },
+    ];
 
     return (
       <>
@@ -187,11 +191,16 @@ class Vacancies extends React.Component {
                 placeholder="Zip code or place"
               />
               <div className="jumbotron__vacancies-content-divider"></div>
-              <select className="jumbotron__vacancies-content-select">
-                <option value="20km">20km</option>
-                <option value="20km">10km</option>
-                <option value="20km">5km</option>
-              </select>
+              <div className="range__select">
+                <Select
+                  // defaultValue={}
+                  name="colors"
+                  options={optionsRange}
+                  className="basic-multi-select"
+                  classNamePrefix="select"
+                  placeholder="10km"
+                />
+              </div>
               <button
                 type="search"
                 className="jumbotron__vacancies-content-btn"
@@ -437,30 +446,6 @@ class Vacancies extends React.Component {
               </div>
             </div>
             <div className="search__result__container__vacancies-results-panel-card-container">
-              <ResultsCard
-                name="Job Name Display Here"
-                bank="MBO / HBO"
-                location="location"
-                price="4324.54"
-              />
-              <ResultsCard
-                name="Job Name Display Here"
-                bank="MBO / HBO"
-                location="location"
-                price="4324.54"
-              />
-              <ResultsCard
-                name="Job Name Display Here"
-                bank="MBO / HBO"
-                location="location"
-                price="4324.54"
-              />
-              <ResultsCard
-                name="Job Name Display Here"
-                bank="MBO / HBO"
-                location="location"
-                price="4324.54"
-              />
               <ResultsCard
                 name="Job Name Display Here"
                 bank="MBO / HBO"

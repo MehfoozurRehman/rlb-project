@@ -101,6 +101,18 @@
   padding: 0.6em 1em;
   font-size: 14px;
 }
+.range__select {
+  width: 100px;
+  margin-left: 1em;
+}
+.range__select .select__control {
+  border: none !important;
+  outline: none !important;
+}
+.range__select .select__control--is-focused {
+  border: none !important;
+  outline: none !important;
+}
 .search__result__container__vacancies-filter-panel-heading-row-btn:hover {
   background-color: darken(#f9e9e0, 10%);
 }
