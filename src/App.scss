@@ -47,11 +47,19 @@ body {
   color: $primary !important;
   font-weight: 400;
   font-size: $normal-font-size !important;
+  border-bottom: 3px solid transparent;
   margin: 0em 1em;
 }
 .nav__link:hover {
-  transition: 50ms;
-  color: $dark !important;
+  transition: 100ms;
+  transform: scale(1.2);
+  color: #ffffff !important;
+}
+.nav__link:focus,
+.nav__link:active {
+  transition: 100ms;
+  transform: scale(1.2);
+  color: #ffffff !important;
 }
 .nav__link__a .dropdown-toggle {
   color: $primary !important;
@@ -60,8 +68,9 @@ body {
   margin: 0em 1em;
 }
 .nav__link__a .dropdown-toggle:hover {
-  transition: 50ms;
-  color: $dark !important;
+  transition: 100ms;
+  transform: scale(1.2);
+  color: #ffffff !important;
 }
 .footer__heading {
   font-size: $heading-font-size;
@@ -447,7 +456,8 @@ body {
 .get__in__touch__panel__info {
   font-size: $normal-font-size;
   color: $primary;
-  margin-bottom: 1em;
+  text-align: justify;
+  margin-bottom: 2em;
 }
 .clients__panel {
   background-color: $primary;
