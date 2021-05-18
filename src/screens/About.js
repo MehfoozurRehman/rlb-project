@@ -18,7 +18,7 @@ import Select from "react-select";
 import "./About.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import get__in__touch__panel__bg from "../assets/get__in__touch__panel__bg__about.png";
+import get__in__touch__panel__bg from "../assets/get__in__touch__panel__bg.png";
 import jumbotron__about__background__img from "../assets/jumbotron__about__background__img.png";
 
 class About extends React.Component {
@@ -129,7 +129,7 @@ class About extends React.Component {
               data-name="Rectangle 768"
               transform="translate(767.81 383.905) rotate(135)"
               fill="none"
-              stroke="#019ad3"
+              stroke="#ee7a27"
               stroke-width="50"
             >
               <rect width="242.924" height="222.924" rx="40" stroke="none" />
@@ -162,7 +162,7 @@ class About extends React.Component {
                 electronic typesetting, remaining essentially.
               </div>
               <div className="get__in__touch__panel__btn">
-                <Button variant="dark" className="button__override">
+                <Button variant="dark" className="button__override__reverse">
                   Get in Touch
                 </Button>
               </div>
