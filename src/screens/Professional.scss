@@ -350,6 +350,29 @@
   position: absolute;
   left: 0px;
 }
+.professional__requirements-section {
+  padding: 0em 12em;
+  position: relative;
+  height: 300px;
+}
+.professional__requirements-section-content {
+  padding: 2em;
+  border-radius: 10px;
+  background-color: $dark;
+  width: 700px;
+  position: absolute;
+  bottom: -100px;
+  z-index: 2;
+}
+.professional__requirements-section-content-heading {
+  font-size: 25px;
+  font-weight: bold;
+  color: $primary;
+}
+.professional__requirements-section-content-info {
+  font-size: 14px;
+  color: $primary;
+}
 @media (max-width: 700px) {
   .professional__panel__info {
     max-width: 100%;
@@ -382,5 +405,13 @@
   }
   .professional__form-section-content-left {
     margin-bottom: 3em;
+  }
+  .professional__requirements-section {
+    height: 500px;
+    padding: 0em 2em;
+  }
+  .professional__requirements-section-content {
+    width: 90%;
+    z-index: 3;
   }
 }

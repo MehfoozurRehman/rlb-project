@@ -1,25 +1,9 @@
 import React from "react";
-import {
-  Container,
-  Jumbotron,
-  Button,
-  Form,
-  FormControl,
-  Row,
-  Col,
-  Image,
-  InputGroup,
-  Nav,
-  Accordion,
-  Card,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Button, Row } from "react-bootstrap";
 import FieldCard from "../components/FieldCard";
-import Select from "react-select";
 import "./Professional.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import get__in__touch__panel__bg from "../assets/get__in__touch__panel__bg.png";
 import jumbotron__professional__background__img from "../assets/jumbotron__professional__background__img.png";
 import professional_about_section_content_right_header_img from "../assets/professional_about_section_content_right_header_img.png";
 import professional_form_section_content_img from "../assets/professional_form_section_content_img.png";
@@ -353,6 +337,38 @@ class Professional extends React.Component {
             </div>
           </div>
         </div>
+        <div className="professional__requirements-section">
+          <div className="professional__requirements-section-content">
+            <div className="professional__requirements-section-content-heading">
+              Job Requirement
+            </div>
+            <div className="professional__requirements-section-content-info">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially.Lorem Ipsum is
+              simply dummy text of the printing and typesetting industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the
+              1500s, when an unknown printer took a galley of type and scrambled
+              it to make a type specimen book. It has survived not only five
+              centuries, but also the leap into electronic typesetting,
+              remaining essentially.Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining
+              essentially.Lorem Ipsum is simply dummy text of the printing and
+              typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a
+              galley of type and scrambled it to make a type specimen book. It
+              has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially.
+            </div>
+          </div>
+        </div>
         <div className="professional__form-section">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -428,87 +444,12 @@ class Professional extends React.Component {
                   Your resume
                 </li>
                 <li className="professional__form-section-content-left-list-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40.5"
-                    height="19"
-                    viewBox="0 0 40.5 19"
-                  >
-                    <line
-                      id="Line_8"
-                      data-name="Line 8"
-                      x2="23"
-                      transform="translate(0 10.5)"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-width="1"
-                    />
-                    <circle
-                      id="Ellipse_10"
-                      data-name="Ellipse 10"
-                      cx="9.5"
-                      cy="9.5"
-                      r="9.5"
-                      transform="translate(21.5)"
-                      fill="#fff"
-                    />
-                  </svg>
                   Your ambitions
                 </li>
                 <li className="professional__form-section-content-left-list-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40.5"
-                    height="19"
-                    viewBox="0 0 40.5 19"
-                  >
-                    <line
-                      id="Line_8"
-                      data-name="Line 8"
-                      x2="23"
-                      transform="translate(0 10.5)"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-width="1"
-                    />
-                    <circle
-                      id="Ellipse_10"
-                      data-name="Ellipse 10"
-                      cx="9.5"
-                      cy="9.5"
-                      r="9.5"
-                      transform="translate(21.5)"
-                      fill="#fff"
-                    />
-                  </svg>
                   Your selection of conversations
                 </li>
                 <li className="professional__form-section-content-left-list-item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="40.5"
-                    height="19"
-                    viewBox="0 0 40.5 19"
-                  >
-                    <line
-                      id="Line_8"
-                      data-name="Line 8"
-                      x2="23"
-                      transform="translate(0 10.5)"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-width="1"
-                    />
-                    <circle
-                      id="Ellipse_10"
-                      data-name="Ellipse 10"
-                      cx="9.5"
-                      cy="9.5"
-                      r="9.5"
-                      transform="translate(21.5)"
-                      fill="#fff"
-                    />
-                  </svg>
                   Your job choice
                 </li>
               </ul>
@@ -617,7 +558,7 @@ class Professional extends React.Component {
             position: "relative",
           }}
         >
-          <Row className="field__card__heading">Choose Your Field</Row>
+          <Row className="field__card__heading">See all similar jobs</Row>
           <Row
             style={{
               display: "flex",
