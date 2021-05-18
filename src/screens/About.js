@@ -1,20 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Jumbotron,
-  Button,
-  Form,
-  FormControl,
-  Row,
-  Col,
-  Image,
-  InputGroup,
-  Nav,
-  Accordion,
-  Card,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
-import Select from "react-select";
+import { Container, Button } from "react-bootstrap";
 import "./About.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

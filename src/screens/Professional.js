@@ -370,16 +370,21 @@ class Professional extends React.Component {
           </div>
         </div>
         <div className="professional__form-section">
+          <img
+            src={professional_form_section_content_img}
+            alt="professional_form_section_content_img"
+            className="professional__form-section-content-img"
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="763.488"
-            height="763.489"
+            width="463.488"
+            height="463.489"
             viewBox="0 0 1063.488 1063.489"
             style={{
               position: "absolute",
-              top: "-390px",
-              right: "-400px",
-              zIndex: "2",
+              top: "-250px",
+              right: "-220px",
+              zIndex: 2,
             }}
           >
             <g
@@ -390,22 +395,17 @@ class Professional extends React.Component {
               stroke="#f8f8f8"
               stroke-width="100"
             >
-              <rect width="752" height="752" rx="40" stroke="none" />
+              <rect width="602" height="602" rx="40" stroke="none" />
               <rect
                 x="75"
                 y="75"
                 width="602"
                 height="602"
-                rx="35"
+                rx="40"
                 fill="none"
               />
             </g>
           </svg>
-          <img
-            src={professional_form_section_content_img}
-            alt="professional_form_section_content_img"
-            className="professional__form-section-content-img"
-          />
           <div className="professional__form-section-content">
             <div className="professional__form-section-content-left">
               <div className="professional__form-section-content-left-sub-heading">

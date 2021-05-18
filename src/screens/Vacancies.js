@@ -1,19 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Jumbotron,
-  Button,
-  Form,
-  FormControl,
-  Row,
-  Col,
-  Image,
-  InputGroup,
-  Nav,
-  Accordion,
-  Card,
-} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Button, Accordion } from "react-bootstrap";
 import Select from "react-select";
 import "./Vacancies.scss";
 import Header from "../components/Header";
