@@ -353,8 +353,8 @@ export default function Header() {
             <Nav.Link as={Link} to="/vacancies" className="nav__link">
               Vacancies
             </Nav.Link>
-            <Nav.Link as={Link} to="/professionals" className="nav__link">
-              Professionals
+            <Nav.Link as={Link} to="/professional" className="nav__link">
+              Professional
             </Nav.Link>
             <Nav.Link></Nav.Link>
             <NavDropdown
@@ -363,10 +363,16 @@ export default function Header() {
               className="nav__link__a"
             >
               <NavDropdown.Item as={Link} to="/clients">
-                Recruitment
+                Werving & Selectie
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/clients">
-                Secondment
+                Detachering
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/clients">
+                Sourcing
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/clients">
+                Interim Solutions
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/clients">
                 RPO (Recruitment Process Outsourcing)
@@ -375,7 +381,7 @@ export default function Header() {
             <Nav.Link as={Link} to="/about-us" className="nav__link">
               About Us
             </Nav.Link>
-            <Nav.Link as={Link} to="/about-us" className="nav__link">
+            <Nav.Link as={Link} to="/blog" className="nav__link">
               Blog
             </Nav.Link>
             <Nav.Link as={Link} to="/contact" className="nav__link">

@@ -92,7 +92,7 @@ export default function Footer() {
                   transform="translate(0 -0.563)"
                 />
               </svg>
-              recruitment@rlbprofessional.nl
+              recruitment@rlbcontact.nl
             </Nav.Link>
           </Col>
           <Col>
@@ -437,7 +437,7 @@ export default function Footer() {
               className="nav__link__footer"
               style={{ fontWeight: "600" }}
             >
-              Professionals
+              contacts
             </Nav.Link>
             <Nav.Link
               href="#"

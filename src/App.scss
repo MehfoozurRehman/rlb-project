@@ -503,6 +503,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.clients__panel__content__card:hover {
+  color: $dark;
+}
 .back__to__top {
   width: 300px !important;
   height: 300px !important;
