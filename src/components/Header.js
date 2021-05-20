@@ -384,9 +384,6 @@ export default function Header() {
             <Nav.Link as={Link} to="/blog" className="nav__link">
               Blog
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav__link">
-              Contact
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

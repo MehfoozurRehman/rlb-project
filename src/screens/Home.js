@@ -465,6 +465,7 @@ class Home extends React.Component {
                   width="88"
                   height="4"
                   style={{ margin: "auto 0px" }}
+                  className="dashed__svg"
                   viewBox="0 0 88 4"
                 >
                   <line
@@ -549,6 +550,7 @@ class Home extends React.Component {
                   width="88"
                   height="4"
                   style={{ margin: "auto 0px" }}
+                  className="dashed__svg"
                   viewBox="0 0 88 4"
                 >
                   <line
@@ -660,6 +662,7 @@ class Home extends React.Component {
                   width="88"
                   height="4"
                   style={{ margin: "auto 0px" }}
+                  className="dashed__svg"
                   viewBox="0 0 88 4"
                 >
                   <line
@@ -799,6 +802,7 @@ class Home extends React.Component {
                   width="88"
                   height="4"
                   style={{ margin: "auto 0px" }}
+                  className="dashed__svg"
                   viewBox="0 0 88 4"
                 >
                   <line

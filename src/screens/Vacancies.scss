@@ -357,16 +357,16 @@
   color: white;
 }
 .search__result__container__vacancies-results-panel-card-content-right-primary-btn {
-  font-size: 14px;
-  padding: 0.7em 1.5em;
-  border: 1px solid $dark;
-  border-radius: 8px;
-  background-color: $dark;
-  color: white;
-  margin-right: 1em;
+  font-size: 14px !important;
+  padding: 0.7em 1.5em !important;
+  border: 1px solid $dark !important;
+  border-radius: 8px !important;
+  background-color: $dark !important;
+  color: white !important;
+  margin-right: 1em !important;
 }
 .search__result__container__vacancies-results-panel-card:hover
   .search__result__container__vacancies-results-panel-card-content-right-primary-btn {
-  border: 1px solid #ee7a27;
-  background-color: $dark;
+  border: 1px solid #ee7a27 !important;
+  background-color: $dark !important;
 }

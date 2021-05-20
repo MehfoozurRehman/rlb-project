@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Button, Accordion } from "react-bootstrap";
 import Select from "react-select";
+import { Link } from "react-router-dom";
 import "./Vacancies.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -123,9 +124,12 @@ function ResultsCard({ name, bank, location, price }) {
           <button className="search__result__container__vacancies-results-panel-card-content-right-secondary-btn">
             More info
           </button>
-          <button className="search__result__container__vacancies-results-panel-card-content-right-primary-btn">
+          <Link
+            to="/contact"
+            className="search__result__container__vacancies-results-panel-card-content-right-primary-btn"
+          >
             Apply Directy
-          </button>
+          </Link>
         </div>
       </div>
     </div>

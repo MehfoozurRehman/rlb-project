@@ -123,6 +123,9 @@
   text-align: center;
 }
 @media (max-width: 700px) {
+  .jumbotron__professional {
+    height: 700px;
+  }
   .professional__panel__vacination {
     flex-direction: column;
   }
@@ -134,5 +137,12 @@
   }
   .professional__panel__vacination__right {
     width: 100%;
+  }
+  .professional__panel__vacination__left__heading {
+    text-align: center;
+    font-size: 18px;
+  }
+  .professional__panel__vacination__left__btn {
+    margin-top: 1em;
   }
 }

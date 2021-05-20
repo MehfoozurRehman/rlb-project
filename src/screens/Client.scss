@@ -1,0 +1,82 @@
+@import "../App.scss";
+
+.jumbotron__client {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.jumbotron__client-background-img {
+  width: 100%;
+  height: 100%;
+}
+.jumbotron__client-content {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  padding: 10em;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.jumbotron__client-content-card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid $dark;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron__client-content-card-reverse {
+  width: 200px;
+  height: 200px;
+  border: 2px solid $highlite;
+  transform: rotate(45deg);
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron__client-content-card-text {
+  color: $primary;
+  font-size: 16px;
+  text-align: center;
+}
+.jumbotron__client-content-card-text-reverse {
+  color: $primary;
+  font-size: 16px;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+.client__section {
+  width: 80%;
+  max-width: 1940px;
+  margin: 0em auto;
+  padding-top: 7em;
+  padding-right: 20em;
+}
+.client__section-reverse {
+  width: 80%;
+  max-width: 1940px;
+  margin: 0em auto;
+  padding-top: 7em;
+  padding-left: 20em;
+}
+@media (max-width: 700px) {
+  .jumbotron__client {
+    height: 1700px;
+  }
+  .jumbotron__client-content {
+    padding: 8em 2em;
+    flex-direction: column;
+  }
+  .client__section {
+    padding-right: 0em;
+  }
+  .client__section-reverse {
+    padding-left: 0em;
+  }
+}

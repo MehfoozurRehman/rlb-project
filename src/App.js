@@ -6,6 +6,7 @@ import About from "./screens/About";
 import Contact from "./screens/Contact";
 import Professional from "./screens/Professional";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Client from "./screens/Client";
 
 export default function App() {
   return (
@@ -23,6 +24,9 @@ export default function App() {
           </Route>
           <Route path="/about-us">
             <About />
+          </Route>
+          <Route path="/clients">
+            <Client />
           </Route>
           <Route path="/contact">
             <Contact />
