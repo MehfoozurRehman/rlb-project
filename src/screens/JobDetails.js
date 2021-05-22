@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Button, Row } from "react-bootstrap";
 import FieldCard from "../components/FieldCard";
-import "./Contact.scss";
+import "./JobDetails.scss";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import jumbotron__contact__background__img from "../assets/jumbotron__contact__background__img.png";
 import contact_about_section_content_right_header_img from "../assets/contact_about_section_content_right_header_img.png";
 import contact_form_section_content_img from "../assets/contact_form_section_content_img.png";
 
-class Contact extends React.Component {
+class JobDetails extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -600,4 +600,4 @@ class Contact extends React.Component {
     );
   }
 }
-export default Contact;
+export default JobDetails;

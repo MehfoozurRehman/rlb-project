@@ -3,7 +3,7 @@ import "./App.scss";
 import Home from "./screens/Home";
 import Vacancies from "./screens/Vacancies";
 import About from "./screens/About";
-import Contact from "./screens/Contact";
+import JobDetails from "./screens/JobDetails";
 import Professional from "./screens/Professional";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Client from "./screens/Client";
@@ -28,8 +28,8 @@ export default function App() {
           <Route path="/clients">
             <Client />
           </Route>
-          <Route path="/contact">
-            <Contact />
+          <Route path="/job-details">
+            <JobDetails />
           </Route>
         </Switch>
       </div>

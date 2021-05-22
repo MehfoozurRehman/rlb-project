@@ -125,7 +125,7 @@ function ResultsCard({ name, bank, location, price }) {
             More info
           </button>
           <Link
-            to="/contact"
+            to="/job-details"
             className="search__result__container__vacancies-results-panel-card-content-right-primary-btn"
           >
             Apply Directy

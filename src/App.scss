@@ -268,7 +268,7 @@ body {
   padding: 0em 1em !important;
 }
 .homepageCompanyJumbotronBg {
-  width: 500px;
+  width: 400px;
   position: absolute;
   bottom: -70px;
   right: 20px;
@@ -526,6 +526,9 @@ body {
     margin: 0 !important;
     padding: 0.5em 1em !important;
   }
+  .jumbotron__img {
+    width: 1440px !important;
+  }
   .jumbotron__box {
     margin: 0 !important;
   }
@@ -586,17 +589,17 @@ body {
 }
 @media (min-width: 1700px) {
   .homepageCompanyJumbotronBg {
-    width: 600px;
+    width: 500px;
   }
 }
 @media (min-width: 1920px) {
   .homepageCompanyJumbotronBg {
-    width: 700px;
+    width: 600px;
   }
 }
 @media (min-width: 2020px) {
   .homepageCompanyJumbotronBg {
-    width: 800px;
+    width: 700px;
   }
 }
 

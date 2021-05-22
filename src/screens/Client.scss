@@ -65,9 +65,73 @@
   padding-top: 7em;
   padding-left: 20em;
 }
+@media (max-width: 1540px) {
+  .jumbotron__client-content-card {
+    width: 150px;
+    height: 150px;
+  }
+  .jumbotron__client-content-card-reverse {
+    width: 150px;
+    height: 150px;
+  }
+  .jumbotron__client-content-card-text {
+    font-size: 12px;
+  }
+  .jumbotron__client-content-card-text-reverse {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1400px) {
+  .jumbotron__client-content-card {
+    width: 140px;
+    height: 140px;
+  }
+  .jumbotron__client-content-card-reverse {
+    width: 140px;
+    height: 140px;
+  }
+  .jumbotron__client-content-card-text {
+    font-size: 12px;
+  }
+  .jumbotron__client-content-card-text-reverse {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1300px) {
+  .jumbotron__client-content-card {
+    width: 130px;
+    height: 130px;
+  }
+  .jumbotron__client-content-card-reverse {
+    width: 130px;
+    height: 130px;
+  }
+  .jumbotron__client-content-card-text {
+    font-size: 10px;
+  }
+  .jumbotron__client-content-card-text-reverse {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .jumbotron__client-content-card {
+    width: 120px;
+    height: 120px;
+  }
+  .jumbotron__client-content-card-reverse {
+    width: 120px;
+    height: 120px;
+  }
+  .jumbotron__client-content-card-text {
+    font-size: 10px;
+  }
+  .jumbotron__client-content-card-text-reverse {
+    font-size: 10px;
+  }
+}
 @media (max-width: 700px) {
   .jumbotron__client {
-    height: 1700px;
+    height: 1200px;
   }
   .jumbotron__client-content {
     padding: 8em 2em;
@@ -78,5 +142,19 @@
   }
   .client__section-reverse {
     padding-left: 0em;
+  }
+  .jumbotron__client-content-card {
+    width: 140px;
+    height: 140px;
+  }
+  .jumbotron__client-content-card-reverse {
+    width: 140px;
+    height: 140px;
+  }
+  .jumbotron__client-content-card-text {
+    font-size: 12px;
+  }
+  .jumbotron__client-content-card-text-reverse {
+    font-size: 12px;
   }
 }
