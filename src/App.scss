@@ -270,7 +270,7 @@ body {
 .homepageCompanyJumbotronBg {
   width: 400px;
   position: absolute;
-  bottom: -70px;
+  bottom: -50px;
   right: 20px;
 }
 .field__card {
@@ -538,9 +538,7 @@ body {
   .input__box {
     max-width: 100% !important;
   }
-  .homepageCompanyJumbotronBg {
-    display: none;
-  }
+
   .field__card {
     width: 80%;
   }
@@ -587,19 +585,39 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 800px) {
+  .homepageCompanyJumbotronBg {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .homepageCompanyJumbotronBg {
+    width: 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .homepageCompanyJumbotronBg {
+    width: 200px;
+  }
+}
+@media (max-width: 1360px) {
+  .homepageCompanyJumbotronBg {
+    width: 300px;
+  }
+}
 @media (min-width: 1700px) {
   .homepageCompanyJumbotronBg {
-    width: 500px;
+    width: 400px;
   }
 }
 @media (min-width: 1920px) {
   .homepageCompanyJumbotronBg {
-    width: 600px;
+    width: 500px;
   }
 }
 @media (min-width: 2020px) {
   .homepageCompanyJumbotronBg {
-    width: 700px;
+    width: 500px;
   }
 }
 
