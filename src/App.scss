@@ -268,7 +268,7 @@ body {
   padding: 0em 1em !important;
 }
 .homepageCompanyJumbotronBg {
-  width: 400px;
+  width: 500px;
   position: absolute;
   bottom: -50px;
   right: 20px;
@@ -592,32 +592,32 @@ body {
 }
 @media (max-width: 1000px) {
   .homepageCompanyJumbotronBg {
-    width: 100px;
+    width: 200px;
   }
 }
 @media (max-width: 1200px) {
   .homepageCompanyJumbotronBg {
-    width: 200px;
+    width: 300px;
   }
 }
 @media (max-width: 1360px) {
   .homepageCompanyJumbotronBg {
-    width: 300px;
+    width: 400px;
   }
 }
 @media (min-width: 1700px) {
   .homepageCompanyJumbotronBg {
-    width: 400px;
+    width: 500px;
   }
 }
 @media (min-width: 1920px) {
   .homepageCompanyJumbotronBg {
-    width: 500px;
+    width: 600px;
   }
 }
 @media (min-width: 2020px) {
   .homepageCompanyJumbotronBg {
-    width: 500px;
+    width: 700px;
   }
 }
 

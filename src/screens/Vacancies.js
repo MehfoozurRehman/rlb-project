@@ -384,6 +384,65 @@ class Vacancies extends React.Component {
                   eventKey="0"
                   className="search__result__container__vacancies-filter-panel-catagory-heading"
                 >
+                  Project Management
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey="0">
+                  <div className="search__result__container__vacancies-filter-panel-catagory-container">
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-17"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-17">
+                      (Field) Service Engineers
+                    </label>
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-18"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-18">
+                      (Field) Service Engineers
+                    </label>
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-19"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-19">
+                      (Field) Service Engineers
+                    </label>
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-20"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-20">
+                      (Field) Service Engineers
+                    </label>
+                    <input
+                      className="search__result__container__vacancies-filter-panel-catagory-checkbox"
+                      id="styled-checkbox-21"
+                      type="checkbox"
+                      value="value1"
+                    />
+                    <label htmlFor="styled-checkbox-21">
+                      (Field) Service Engineers
+                    </label>
+                  </div>
+                </Accordion.Collapse>
+              </Accordion>
+              <Accordion>
+                <Accordion.Toggle
+                  as={Button}
+                  variant="link"
+                  eventKey="0"
+                  className="search__result__container__vacancies-filter-panel-catagory-heading"
+                >
                   Education
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">

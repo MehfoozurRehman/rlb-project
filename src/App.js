@@ -7,6 +7,8 @@ import JobDetails from "./screens/JobDetails";
 import Professional from "./screens/Professional";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Client from "./screens/Client";
+import Blog from "./screens/Blog";
+import BlogArtical from "./screens/BlogArtical";
 
 export default function App() {
   return (
@@ -30,6 +32,12 @@ export default function App() {
           </Route>
           <Route path="/job-details">
             <JobDetails />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/blog-artical">
+            <BlogArtical />
           </Route>
         </Switch>
       </div>
